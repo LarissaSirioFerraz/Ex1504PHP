@@ -7,8 +7,6 @@
 <body>
 <?php
 
-	if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['genero'])) 
-	{
 	$genero = $_POST['genero'];
 
 	if ($genero == "homem")
@@ -23,7 +21,7 @@
 		$palavra = $vetor[rand(0, count($vetor)-1)];
 		echo $palavra;
 	}
-	}
+
 ?>
 </body>
 </html>
